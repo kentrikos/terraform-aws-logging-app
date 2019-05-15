@@ -63,3 +63,7 @@ variable "tags" {
   type        = "map"
   default     = {}
 }
+
+variable "application_aws_account_number" {
+  description = "AWS application account number (without hyphens)"
+}

@@ -30,6 +30,7 @@ data "template_file" "fluentd_values" {
     logstash_prefix          = "${var.elasticsearch_logstash_prefix}"
     assume_role_arn          = "${var.assume_role_arn}"
     assume_role_session_name = "${var.assume_role_session_name}"
+    aws_account_id           = "${var.application_aws_account_number}"
   }
 }
 
